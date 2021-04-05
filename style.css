@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#wrap {
+  height: 100%;
+  font-family: 'Nunito',
+  sans-serif;
+  color: rgba(109, 54, 238, 0.1);
+}
+
+body>#wrap {
+  height: auto;
+  min-height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; */
+}
+
+body{
+  background-color: #333333;
+}
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.polygon {
+  fill: #333333;
+  stroke: white;
+  animation: poly 5s linear infinite;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes poly{
+  0%{
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  15% {
+    stroke-dashoffset: 250;
+    fill: #333333;
+  }
+  20% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+    100% {
+      stroke-dashoffset: 0;
+      fill: white;
+    }
+}
+
+
+.asa {
+  fill: none;
+  stroke: none;
+}
+
+.text1 {
+  fill: white;
+  animation: teks1 5s linear infinite;
+}
+@keyframes teks1 {
+  0% {
+    fill: #333333;
+  }
+
+  15% {
+    fill: #333333;
+  }
+
+  20% {
+    fill: white;
+  }
+
+  25% {
+    fill: white;
+  }
+
+  27% {
+    fill: #333333;
+  }
+
+  100% {
+    fill: #333333;
+  }
+}
+
+.text2 {
+  fill: white;
+  animation: teks2 5s linear infinite;
+  }
+
+  @keyframes teks2 {
+    0% {
+      fill: #333333;
+    }
+
+    15% {
+      fill: #333333;
+    }
+
+    20% {
+      fill: white;
+    }
+
+    30% {
+      fill: white;
+    }
+
+    31% {
+      fill: #333333;
+    }
+
+    32% {
+      fill: white;
+    }
+
+    33% {
+      fill: #333333;
+        }
+
+    36% {
+      fill: white;
+    }
+
+    37% {
+      fill: #333333;
+    }
+
+    100% {
+      fill: #333333;
+    }
+  }
+
+.text3 {
+  fill: white;
+  animation: teks3 5s linear infinite;
+  }
+
+  @keyframes teks3 {
+    0% {
+      fill: #333333;
+    }
+
+    15% {
+      fill: #333333;
+    }
+
+    20% {
+      fill: white;
+    }
+
+    34% {
+      fill: white;
+    }
+
+    37% {
+      fill: #333333;
+    }
+
+    100% {
+      fill: #333333;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OTHER */
+
+footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding: .5rem 0;
+  color: #6e6e6e;
+}
+
+footer > a{
+  text-decoration: none;
+  color: #6e6e6e;
+
+}
+
+footer > a:hover{
+  color: #a5a5a5;
+}
+
+@media (min-width: 640px) {
+  main#box {
+    transform: translate(-50%, -50%) scale(.7);
+  }
+}
+
+@media (min-width: 768px) {
+    main#box {
+      transform: translate(-50%, -50%) scale(1);
+    }
+}
